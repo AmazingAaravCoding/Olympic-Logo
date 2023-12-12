@@ -1,0 +1,20 @@
+canvas=document.getElementById("myCanvas")
+ctx=canvas.getContext("2d")
+width=5
+function circle(x,y){
+    ctx.beginPath()
+    ctx.strokeStyle=colour
+    ctx.lineWidth=width
+    ctx.arc(x,y,40,0,2*Math.PI)
+    ctx.stroke()    
+}
+colour="blue"
+circle(200,200)
+colour="black"
+circle(300,200)
+colour="red"
+circle(400,200)
+colour="yellow"
+circle(250,230)
+colour="green"
+circle(350,230)
